@@ -29,6 +29,7 @@ public class EmployeeController {
 	 */
 	@RequestMapping("/reg")
 	public String showRegPage(ModelMap map) {
+		System.out.println("This is showRegPage() method");
 		map.addAttribute("employee", new Employee());
 		return "EmployeeRegister";
 	}
